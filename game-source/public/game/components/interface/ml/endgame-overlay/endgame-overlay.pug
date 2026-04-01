@@ -6,73 +6,73 @@ script(src='../scripts-website.min.js')
 	.conversationBox
 		.conversation-container
 			#part1
-				h3 Taking A Step Back
+				h3 退一步思考
 				img.center-block(src='assets/img/sotbf-manual.gif')
 
-				p As a recruiter, which of these attributes did you value the most?
+				p 作为招聘人员，你最看重以下哪些特质？
 
 				#buttons
 					div(class="button button__choice" onclick="select(this)")
-						p Education
+						p 教育背景
 
 					div(class="button button__choice" onclick="select(this)")
-						p Experience
+						p 工作经验
 
 					div(class="button button__choice" onclick="select(this)")
-						p Ambition
+						p 事业心
 
 					div(class="button button__choice" onclick="select(this)")
-						p Skills
+						p 技能
 
 			#part2
 
-				p This is a simplified simulation, but we hope it got you thinking. Now imagine how difficult it is to choose for a real-life recruiter! <br>
+				p 这是一个简化的模拟，但我们希望它能让你思考。现在想象一下，对于现实生活中的招聘人员来说，做出选择是多么困难！&lt;br&gt;
 
-				p When there are many unknowns, people tend to rely on their gut feelings, which is just an expression of their biases and preconceptions. <br>
+				p 当存在许多未知因素时，人们往往依赖直觉，而这正是他们偏见和先入为主观念的体现。&lt;br&gt;
 			
-				p You might not be consciously discriminative, but in the early days of your company you received more highly qualified orange applicants. The unknowns and the biased environment can make well-intentioned decisions biased. This is what the industry needs to realize. <br>
+				p 你可能没有有意识地歧视，但在公司成立初期，你收到了更多高素质的橙色申请者。未知因素和有偏见的环境会使善意的决策产生偏见。这是行业需要认识到的。&lt;br&gt;
 
 				div(class="button button__proceed" onClick="next1()")
-					p(style="font-size: 1.2rem") NEXT
+					p(style="font-size: 1.2rem") 下一步
 
 			
 			#part3
 				
-				h3 Training the Biased Algorithm
+				h3 训练有偏见的算法
 
-				p When the engineering team contacted you, they asked you for <b>your</b> decisions, in <b>cv_all.zip</b> , because a machine learning (ML) algorithm requires human input. <br>
+				p 当工程团队联系你时，他们向你索要&lt;b&gt;你的&lt;/b&gt;决策，在&lt;b&gt;cv_all.zip&lt;/b&gt;中，因为机器学习（ML）算法需要人类输入。&lt;br&gt;
 
 				img.center-block(src='assets/img/sotbf-training.gif')
 
-				p That means if you had biases, the software would replicate them! But what if you were as objective as you could be? <br> 
+				p 这意味着如果你有偏见，软件会复制它们！但如果你尽可能客观呢？&lt;br&gt; 
 
-				p Your data alone wasn't enough to build a ML algorithm, because machine learning works only on large amounts of data. That’s why the software engineer asked you to choose a larger dataset. The problem is, all datasets are built by humans who tend to be biased. <br>
+				p 仅靠你的数据不足以构建机器学习算法，因为机器学习只适用于大量数据。这就是为什么软件工程师要求你选择一个更大的数据集。问题是，所有数据集都是由倾向于有偏见的人构建的。&lt;br&gt;
 
-				p In this case, it largely consisted of applicants from Orange Valley, where more people were historically allowed to work in tech. <br>
+				p 在这种情况下，它主要由来自橙谷的申请者组成，那里历史上有更多人被允许从事技术工作。&lt;br&gt;
 
 				div(class="button button__proceed" onClick="next2()")
-					p(style="font-size: 1.2rem; color: white") NEXT
+					p(style="font-size: 1.2rem; color: white") 下一步
 
 			
 			#part4
 
-				h3 Behind the Difficulties
+				h3 困难背后
 
-				p Can we disregard race or gender? <br>
+				p 我们可以忽视种族或性别吗？&lt;br&gt;
 
-				p There are no buttons on ML algorithms and the input data is often difficult to debias. While applicants don’t put race or gender explicitly on their CVs, they are often manifested through the colleges, communities, and organizations certain demographics are usually a part of. <br>
+				p 机器学习算法上没有按钮，输入数据往往难以消除偏见。虽然申请者不会在简历上明确写明种族或性别，但它们往往通过某些人口统计数据通常所属的学院、社区和组织体现出来。&lt;br&gt;
 
 				img.center-block(src='assets/img/sotbf-automated.gif', style="width: 60%; margin-right: auto; clear: right; margin-top: 3%;")
 
-				p When a program learns from years of data, we need to question the data it is learning from. Just because a decision is presented as 'automated' doesn't mean it is right or objective. <br>
+				p 当一个程序从多年的数据中学习时，我们需要质疑它正在学习的数据。仅仅因为一个决策被呈现为"自动化"并不意味着它是正确或客观的。&lt;br&gt;
 
-				p Your startup Bestfit might've failed today, but there's no reason our societies should! Head to our website to learn more. We hope it'll make you discuss and ask questions. <br>
+				p 你的创业公司 Bestfit 今天可能失败了，但我们的社会没有理由失败！前往我们的网站了解更多信息。我们希望它能让你讨论和提问。&lt;br&gt;
 
 				.button-row
-					div(class="button button__proceed" onClick="goToResourcesLog(); location.href='https://www.survivalofthebestfit.com/resources'") BECOME AN EXPERT
+					div(class="button button__proceed" onClick="goToResourcesLog(); location.href='https://www.survivalofthebestfit.com/resources'") 成为专家
 					
 					//- share buttons
 					//- a(href="https://www.facebook.com/sharer.php?u=https://survivalofthebestfit.com", target="_blank")
 					//- 	img(src="https://4.bp.blogspot.com/-raFYZvIFUV0/UwNI2ek6i3I/AAAAAAAAGSA/zs-kwq0q58E/s1600/facebook.png" alt="Facebook" )
 					//- a(href="https://twitter.com/share?url=https://survivalofthebestfit.com" target="_blank")
-					//- 	img(src="https://4.bp.blogspot.com/--ISQEurz3aE/UwNI4hDaQMI/AAAAAAAAGS4/ZAgmPiM9Xpk/s1600/twitter.png" alt="Twitter")
+					//- 	img(src="https://4.bp.blogspot.com/-raFYZvIFUV0/UwNI2ek6i3I/AAAAAAAAGS4/ZAgmPiM9Xpk/s1600/twitter.png" alt="Twitter")

@@ -2,22 +2,22 @@ include ../../ui-overlay/ui-overlay.pug
 +overlay()(id="dataset-overlay" class="DatasetOverlay")
   div.DatasetOverlay__x-icon.js-x-icon
   div.DatasetOverlay__header
-    h1.DatasetOverlay__title Dataset Inspector
-    h3#TaskDescription Task: Find out why <u>Elvan Yang</u> was rejected
+    h1.DatasetOverlay__title 数据检查器
+    h3#TaskDescription 任务：找出为什么&lt;u&gt;Elvan Yang&lt;/u&gt;被拒绝了
   div.ViewLayout#CvInspector
     div.ViewLayout-item
-      h3.DatasetGrid-title Accepted Candidates
+      h3.DatasetGrid-title 已录用候选人
       div.DatasetGrid#dataset-accepted
     div.ViewLayout-item.CVPreview
       include ../../ui-resume/ui-resume.pug
       +resume()(id="dataset-view-resume" class="Resume--dataset")
       //- p.ViewLayout-scroller#dataset-scroller.u-oscillate.is-inactive Scroll for more
     div.ViewLayout-item
-      h3.DatasetGrid-title Rejected Candidates
+      h3.DatasetGrid-title 已拒绝候选人
       div.DatasetGrid#dataset-rejected
         div.PersonCard.is-inactive.is-parent#person-card-template
           div.PersonCard-item.PersonCard-cv.has-parent
           p.PersonCard-item.PersonCard-name.has-parent
       div.Email.ReplyButton
-        p.Email_Notificaiton Respond to Email
-        p.Email_Subject Re: Candidate complaint
+        p.Email_Notificaiton 回复邮件
+        p.Email_Subject 回复：候选人投诉
