@@ -2,7 +2,7 @@ include ../../ui-overlay/ui-overlay.pug
 include ../../../universal/button/button
 +overlay()(id="TrainingOverlay" class="transparent-overlay")
   div(class="ProgressBox")
-    p HIRING ALGORITHM
+    p 招聘算法
     div(class="ProgressBar")
       div(class="ProgressBar__base")
       div(class="ProgressBar__progress")
@@ -10,9 +10,9 @@ include ../../../universal/button/button
   div(class="js-email email is-inactive")
     div(class="email__head")
       p From: software-engineer@bestfit.com
-      p Subject: Hiring Algorithm Ready!
+      p 主题：招聘算法已就绪！
     p(class="email__paragraph")
-      span Our algorithm has been trained. Your job is automated now, so enjoy the ride!
+      span 我们的算法已经训练完成。你的工作现在已自动化，好好享受吧！
     div(class="email__response")
-      +button('Great.')(class="js-training-stage-btn responseButton")
+      +button('太棒了。')(class="js-training-stage-btn responseButton")
     
