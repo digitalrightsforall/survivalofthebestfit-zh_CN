@@ -30,7 +30,7 @@ const english = {
             eval: 'Click Accept to hire a candidate, or Reject to see more new applicants.',
         },
         ml: {
- 
+
         },
     },
  
@@ -62,7 +62,7 @@ const english = {
         hiringGoal: 8,
         previousStageFailed: 'You ran out of time. The investors want to see results, you\'ll have to hire even more people next month!',
         duration: 45
- 
+
     },
  
     mlTransition: {
@@ -89,7 +89,7 @@ const english = {
                 {
                     text: 'That\'s great.',
                     response: 'Perfect! ',
- 
+
                 },
             ],
         },
@@ -317,7 +317,7 @@ const english = {
                 news: [
                     'Blueville Daily: Hiring algorithm scandal blows out of proportions',
                     'The Justice: Tech companies need to be held accountable',
- 
+
                 ],
             },
         ],
@@ -344,7 +344,329 @@ const english = {
     ]
 };
 
-const language = 'hungarian';
+const chinese = {
+    header: {
+        title: '适者生存',
+        subtitle: 'AI如何像人类一样招聘',
+    },
+    about: {
+        aboutBody: '《适者生存》是一款展示在招聘中盲目使用AI如何进一步加剧人类偏见的游戏。在这个模拟中，用户将扮演一家快速发展公司的招聘人员。为了降低成本和最大化产出，他们将使用一个新的、鲜为人知的AI系统来取代人类招聘人员，却意识到这会引发一系列问题。\n这是由 Gabor Csapo、Jihyun Kim、Miha Klasinc 和 Alia ElKattan 共同开发的项目',
+    },
+
+    resources: {
+        title: '机器、偏见与公平',
+        aboutBiasTitle: '"机器偏见"是如何运作的？',
+        aboutBias: 'xx\n xxx',
+    },
+
+    titleStage: {
+        header: '恭喜！',
+        instruction: '你刚刚从橙谷风投获得了100万美元的投资。准备好发展你的新创业公司了吗？',
+        responses: [
+            '开始游戏',
+        ],
+    },
+    instructions: {
+        manual: {
+            click: '点击候选人查看他们的简历',
+            eval: '点击"接受"录用候选人，或点击"拒绝"查看更多新申请者。',
+        },
+        ml: {
+
+        },
+    },
+
+    smallOfficeStage: {
+        subject: '我们对你创业公司的投资',
+        messageFromVc: '我们很高兴看到你发展这家创业公司。这是一个竞争激烈的市场，所以只录用最优秀的人才。',
+        responses: ['让我们开始招聘'],
+        hiringGoal: 3,
+    },
+
+    mediumOfficeStage: {
+        subject: '好的开始',
+        messageFromVc: '但是，要获得更多资金，你需要更快地招聘，所以注意时间！',
+        responses: [
+            '我会更快招聘的。',
+            '嗯，好的。',
+        ],
+        hiringGoal: 5,
+        duration: 45
+    },
+
+    largeOfficeStage: {
+        subject: '下一轮融资...',
+        messageFromVc: '做得不错，但你需要更快地招聘才能获得更多资金。你能做到吗？',
+        responses: [
+            '当然！',
+            '我有点不知所措。',
+        ],
+        hiringGoal: 8,
+        previousStageFailed: '你时间不够了。投资者想要看到结果，下个月你必须招聘更多人！',
+        duration: 45
+
+    },
+
+    mlTransition: {
+        subject: '使用AI？',
+        messageFromVc: '橙谷这里竞争太激烈了...你能和你的软件工程师谈谈加快进度吗？我听说现在AI能解决所有问题。',
+        responses: [
+            '当然，我们可以用自动化来解决！',
+            '嗯，我会给工程师发邮件。',
+        ],
+        previousStageFailed: '这显然行不通。和你的软件工程师谈谈，看看他们能否加快进度。也许AI是解决方案。',
+    },
+
+    conversation: [
+        {
+            dialogue_step: 1,
+            text: '你问我们如何能更快招聘。所以我们用<i>机器学习</i>构建了一个招聘算法。基本上，我们会教电脑像你一样招聘，但速度要快得多！',
+            answer_choice: [
+                {
+                    text: '这是如何运作的？',
+                    response: '',
+                },
+                {
+                    text: '太好了。',
+                    response: '完美！',
+
+                },
+            ],
+        },
+        {
+            dialogue_step: 2,
+            text: '首先，算法会读取过去申请者的简历以及他们是否被录用。然后它会通过<u>模仿你的招聘决策过程</u>来学习什么使候选人优秀或不合格！',
+            answer_choice: [
+                {
+                    text: '机器会像我一样思考？',
+                    response: '"思考"这个词用得太重了。',
+                },
+                {
+                    text: '对我来说没问题',
+                    response: '不过我们得小心点。',
+                },
+            ],
+        },
+        {
+            dialogue_step: 3,
+            text: '没有人类输入，程序不可能知道候选人的好坏——我们首先需要给它<u>大量数据</u>来学习。',
+            answer_choice: [
+                {
+                    text: '我们从哪里获取数据？',
+                    response: '',
+                },
+                {
+                    text: '多少算多？',
+                    response: '',
+                },
+            ],
+        },
+        {
+            dialogue_step: 4,
+            text: '我需要你的帮助：你能把你目前评估过的所有申请者的简历发给我吗？<u><b>点击</b>桌面上</u>名为<i>"cv_all.zip"</i><span class="desktop__folder-icon"></span>的文件',
+            file_drag: true,
+            answer_choice: [],
+        },
+        {
+            dialogue_step: 5,
+            text: '谢谢！机器学习算法随着数据增多会变得更准确，所以我们要这样做：使用大型科技公司的数据。他们有大量的申请者记录，所以我们可以将我们的简历与他们的合并，训练我们的模型！\n<u>选择一家</u>你认为招聘聪明人的公司。',
+            dataset_choice: true,
+            answer_choice: [
+                'Google',
+                'Amazon',
+                'Facebook',
+            ],
+        },
+        {
+            dialogue_step: 6,
+            text: '就这样！我们现在可以用大量过去的数据训练算法并投入使用！',
+            answer_choice: [
+                {
+                    text: '太好了，让我们训练它！',
+                },
+            ],
+        },
+    ],
+
+    stats_conversation: [
+        {
+            dialogue_step: 1,
+            text: '我们正在试图弄清楚算法出了什么问题。',
+            answer_choice: [
+                {
+                    text: '让我们按橙色和蓝色来分解它的决策？',
+                    response: '',
+                },
+            ],
+        },
+        {
+            dialogue_step: 2,
+            text: '在这里；你怎么看？',
+            stats: true,
+            answer_choice: [
+                {
+                    text: '我们拒绝了更多蓝色的人。',
+                    response: '',
+                },
+                {
+                    text: '这没有偏见。',
+                    response: '如果你仔细看，我们有同样数量的同等资质的蓝色和橙色候选人，但算法接受的橙色要多得多。',
+                },
+            ],
+        },
+        {
+            dialogue_step: 3,
+            text: '让我们找出原因！你还记得我们最初是如何训练算法的吗？',
+            answer_choice: [
+                {
+                    text: '我把我的决策发给你，让算法模仿我。',
+                    response: '正确。',
+                },
+                {
+                    text: '我不在乎，修好它！',
+                    response: '机器是根据你的决策创建的，所以我需要你的帮助。',
+                },
+            ],
+        },
+        {
+            dialogue_step: 5,
+            text: '看看我们手动招聘的数据：',
+            stats: true,
+            manualStats: true,
+            answer_choice: [
+                {
+                    text: '我录用了更多橙色的人。',
+                    response: '我们的算法试图复制我们之前的招聘，所以如果你录用了更多橙色的人，它就会"学习"偏向他们。',
+                },
+                {
+                    text: '我确定我没有偏见！',
+                    response: '我相信你有良好的意图，但我们在第一阶段的蓝色申请者非常少，被录用的就更少了。算法错误地将此解释为他们是不利的候选人。',
+                },
+            ],
+        },
+        {
+            dialogue_step: 6,
+            text: ' ',
+            answer_choice: [
+                {
+                    text: '我们应该检查数据的。',
+                    response: '是的，我认为我们需要更加小心数据的来源和统计分析',
+                },
+                {
+                    text: '但简历上没有颜色！',
+                    response: '它可以间接学习区分橙色和蓝色人的其他元素，例如橙色人通常上橙谷大学学院，而蓝色人上蓝镇大学。',
+                },
+            ],
+        },
+        {
+            dialogue_step: 7,
+            text: '我们也应该检查你发给我的大公司数据集的质量！我怎么能理解招聘决策？我是软件工程师！',
+            answer_choice: [
+                {
+                    text: '我们应该更多地合作，更加小心...',
+                    response: '',
+                },
+            ],
+        },
+    ],
+
+    mlLabStage: {
+        narration: [
+            {
+                news: [
+                    '降低成本的最佳方法：在所有事情中使用机器学习',
+                    '事业心被认为是员工最重要的特质',
+                    '外交还是激进？描述蓝色人的不同方式',
+                ],
+            },
+            {
+                messageFromVc: '你已经能够以过去10倍的速度招聘，还降低了成本！做得好，算法似乎在工作',
+                responses: [
+                    '很高兴听到这个！',
+                ],
+                news: [
+                    '橙谷评论：招聘的未来在于AI吗？',
+                    '科技迷：招聘算法是下一件大事',
+                ],
+            },
+            {
+                launchCVInspector: true,
+                messageFromVc: '我刚刚收到一位名叫<u>Elvan Yang</u>的前申请者的投诉，问为什么他们被拒绝了。你能调查一下吗？',
+                responses: [
+                    '我会在数据检查器中查找Elvan！',
+                    '好的，我会把结果发邮件给你。',
+                ],
+                inspectQuestion: '那么Elvan为什么被拒绝？',
+                inspectResponses: [
+                    '我不知道。',
+                    '也许因为Elvan是蓝色的？',
+                ],
+            },
+            {
+                breaking: true,
+                messageFromVc: '嘿，一些记者在谈论招聘偏见，但既然现在都是自动化的，你就没事了，对吧？',
+                responses: [
+                    '机器不会有偏见，对吧？',
+                    '不确定，我会留意机器的决策。',
+                ],
+                news: [
+                    '科技问责：研究表明招聘算法可能继承人类对少数群体的偏见',
+                    '科技迷：招聘算法如何运作？',
+                ],
+            },
+            {
+                launchMachineInspector: true,
+                messageFromVc: '我听说你可能卷入了这个偏见事件。记者们要求透明度。审查我们的评估指标，看看你能否公开。',
+                responses: [
+                    '让我再和我们的软件工程师谈谈！',
+                    '嗯，实际上...我们可能有问题。',
+                ],
+                inspectQuestion: '最近的一项调查说我们歧视蓝镇居民！怎么会这样？',
+                inspectResponses: [
+                    '我们训练的优秀橙色候选人比蓝色多。这使它偏向橙色。',
+                    '也许大公司的数据集充满偏见？我们应该更多地研究我的训练数据。',
+                ],
+                news: [
+                    '蓝镇公报：蓝镇居民被算法不公平对待？',
+                    '正义：科技行业的橙色特权',
+                ],
+            },
+            {
+                messageFromVc: '关闭公司！！！消息传出去了，你刚刚因招聘歧视被起诉。所有投资者都在撤资！到底出了什么问题？',
+                responses: [
+                    '让我们总结一下发生了什么。',
+                ],
+                news: [
+                    '蓝镇日报：招聘算法丑闻愈演愈烈',
+                    '正义：科技公司需要被问责',
+
+                ],
+            },
+        ],
+    },
+    selfPromoMessages: [
+        '录用我！',
+        '我是最棒的',
+        '帮我养家！',
+        '我是专家！',
+        '帮我还学生贷款！',
+        '我非常需要一份工作！',
+        '选我！',
+        '我是个好人！',
+        '我很有事业心',
+        '这是一只有潜力的创业公司',
+        '你看起来像个很棒的CEO',
+        '我想为你工作',
+        '我很善于与人相处',
+        '我能比这些人做得更好',
+        '我学得很快！',
+        '你为什么不录用我？',
+        '我有两个孩子',
+        '我是班上最聪明的'
+    ]
+};
+
+const language = 'chinese';
 
 // exporting whatever is determined as the language.
 // module.export is for pug, while the txt variable is just a global shatred variable holding all the texts and can be used in JS
@@ -367,9 +689,12 @@ switch (language) {
 case 'english':
     setLang(english);
     break;
+case 'chinese':
+    setLang(chinese);
+    break;
 case 'arabic':
     setLang(null);
     break;
 default:
-    setLang(english);
+    setLang(chinese);
 } 
